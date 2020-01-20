@@ -2,7 +2,7 @@
 	"name" : "Yaposhka Sushi",
 	"short_name" : "Suchi",
 	"description" : "Япошка суши",
-	"start_url" : "http://192.168.1.207:3000/",
+	"start_url" : "https://qweeex.github.io/yaposhka-layout/",
 	"display" : "fullscreen",
 	"orientation" : "portrait",
 	"lang" : "Russian",
