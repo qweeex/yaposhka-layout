@@ -1,0 +1,132 @@
+body{
+  font-family: 'Circe';
+}
+.main-layout{
+  &__slider{
+    height: 320px;
+    position: relative;
+    .slider-wrapper{
+      height: 100%;
+      .slide-item{
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .slider-thumb{
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      &__item{
+        width: 7px;
+        height: 7px;
+        display: block;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        content: '';
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+      }
+      .item-active{
+        background: #fff;
+      }
+    }
+  }
+  &__menu{
+    margin-top: 35px;
+    .menu-wrapper{
+      .menu-item{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &__title{
+          width: 50%;
+          p{
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 31px;
+            text-decoration-line: underline;
+            color: #292F4C;
+            padding-left: 15px;
+          }
+        }
+        &__img{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          .img-back{
+            width: 141px;
+            height: 170px;
+            background: #F4F5F8;
+            border-radius: 19px;
+            position: relative;
+          }
+          img{
+            position: absolute;
+            top: 35px;
+            left: -20px
+          }
+        }
+      }
+    }
+  }
+  &__toolbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: url("../img/Subtract.svg") center center no-repeat;
+    background-size: cover;
+    height: 98px;
+    .toolbar-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+      .menu-item{
+        width: 20%;
+        text-align: center;
+        padding-top: 25px;
+      }
+      .card-item{
+        width: 20%;
+        text-align: center;
+        position: relative;
+        .item-link{
+          background: #F60011;
+          padding: 9px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: max-content;
+          margin-left: auto;
+          margin-right: auto;
+          text-decoration: none;
+          .count{
+            font-size: 10px;
+            color: #292F4C;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: 18px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.catalog-layout{
+  background: #292F4C;
+  height: 100vh;
+}

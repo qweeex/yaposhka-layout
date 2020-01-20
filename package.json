@@ -1,0 +1,11 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "description": "Layout app ",
+  "main": "index.js",
+  "scripts": {
+    "layout": "browser-sync start -server --files '*.html, less/*.less'"
+  },
+  "author": "",
+  "license": "ISC"
+}
