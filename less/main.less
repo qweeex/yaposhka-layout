@@ -1,7 +1,10 @@
 body{
   font-family: 'Circe';
+  background: #292F4C;
 }
 .main-layout{
+  background: #ffffff;
+  min-height: 100vh;
   &__slider{
     height: 320px;
     position: relative;
@@ -121,6 +124,20 @@ body{
           }
         }
       }
+    }
+  }
+}
+.catalog-layout{
+  &__header{
+    padding: 20px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .header-cart{
+      margin-left: auto;
+    }
+    .header-menu{
+      margin-left: 22px;
     }
   }
 }
