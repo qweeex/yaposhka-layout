@@ -1,10 +1,10 @@
 {
-	"name" : "Yaposhka Sushi",
-	"short_name" : "Suchi",
+	"name" : "Япошка64",
+	"short_name" : "Япошка64",
 	"description" : "Япошка суши",
 	"start_url" : "https://qweeex.github.io/yaposhka-layout/",
 	"display" : "fullscreen",
-	"orientation" : "portrait",
+	"orientation" : "portrait-primary",
 	"lang" : "Russian",
 	"background_color" : "none"
 }
