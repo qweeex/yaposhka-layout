@@ -2,7 +2,7 @@
 	"name" : "Япошка64",
 	"short_name" : "Япошка64",
 	"description" : "Япошка суши",
-	"start_url" : "http://192.168.1.207:3002/",
+	"start_url" : "https://qweeex.github.io/yaposhka-layout/",
 	"display" : "fullscreen",
 	"orientation" : "portrait-primary",
 	"lang" : "Russian",
