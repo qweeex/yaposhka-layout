@@ -201,7 +201,12 @@
                     <input type="text" placeholder="дополнительный телефон" class="input-text">
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="оплата" class="input-text">
+                    <label for="pay">
+                        <input id="pay" type="hidden" name="pay" >
+                        <div class="input-text input-pay">
+                            Оплата
+                        </div>
+                    </label>
                 </div>
                 <div class="input">
                     <input type="text" placeholder="ресторан" class="input-text">
@@ -217,7 +222,19 @@
                 </div>
             </div>
         </div>
-        <div class="cart-layout__total">
+        <div class="cart-layout__pay total-hide">
+            <div class="pay-title">
+                <p>Оплата</p>
+            </div>
+            <div class="pay-types">
+                <ul>
+                    <li><a href="#" class="pay-item" >Наличными</a></li>
+                    <li><a href="#" class="pay-item" >Картой online</a></li>
+                    <li><a href="#" class="pay-item" >Картой при получении</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart-layout__total ">
             <div class="total-price">
                 <p><span>1995</span> ₽</p>
             </div>
@@ -232,6 +249,20 @@
             e.preventDefault();
             document.querySelector('.component-menu').classList.toggle('component-menu__active');
         });
+        document.querySelector('label[for="pay"]').addEventListener('click', (e) => {
+            document.querySelector('.cart-layout__total').classList.add('total-hide');
+            document.querySelector('.cart-layout__pay').classList.remove('total-hide');
+        });
+        let typePay = document.querySelectorAll('.pay-item');
+        for (let i = 0; i < typePay.length; i++) {
+            typePay[i].addEventListener('click', (e) => {
+                let type = e.target.innerText;
+                let pay = document.querySelector('.input-pay');
+                pay.innerHTML = '<span>' + type + '</span>';
+                document.querySelector('.cart-layout__total').classList.remove('total-hide');
+                document.querySelector('.cart-layout__pay').classList.add('total-hide');
+            });
+        }
     </script>
 </body>
 </html>
